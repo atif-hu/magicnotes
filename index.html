@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy Notes</title>
     <link rel = "icon" href = 
 "logo-removebg-preview.png" 
@@ -37,7 +36,13 @@
             <h1>Welcome to Easy Notes</h1>
             <div class="card" >
             <div class=" card-body">
-                <h5 class="card-title">Write your note here</h5>
+                <div class="mb-3">
+                    <h5 class="card-title" style="text-align: left;">Add your title here</h5>
+                    <input type="text" class="form-control" id="addTitle" aria-describedby="title" placeholder="Enter title">
+                    
+                  </div>
+
+                <h5 class="card-title" style="text-align: left;">Write your note here</h5>
                 <div class="form-group">
                     <textarea class=" my-2 form-control" id="addTxt" rows="3" onkeyup="success()" placeholder="Enter your text"></textarea>
                 </div>
